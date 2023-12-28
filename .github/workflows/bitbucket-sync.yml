@@ -1,0 +1,19 @@
+name: Bitbucket sync
+
+on:
+  push
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push
+        uses: heussd/mirror-to-bitbucket-github-action@v2
+        with:
+          password: ${{ secrets.BITBUCKET_PASSWORD }}
+          spacename: ${{ secrets.BITBUCKET_SPACENAME }}
+          username: ${{ secrets.BITBUCKET_USERNAME }}
