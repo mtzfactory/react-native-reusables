@@ -39,8 +39,8 @@ export default defineConfig({
               link: '/getting-started/initial-setup/',
             },
             {
-              label: 'Adding Icons',
-              link: '/getting-started/adding-icons/',
+              label: 'Icons',
+              link: '/getting-started/icons/',
             },
             {
               label: 'Common patterns',
@@ -54,6 +54,10 @@ export default defineConfig({
             {
               label: 'Accordion',
               link: '/components/accordion/',
+            },
+            {
+              label: 'Alert',
+              link: '/components/alert/',
             },
             {
               label: 'Alert Dialog',
